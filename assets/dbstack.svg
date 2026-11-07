@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="mariaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#003545"/>
+      <stop offset="100%" stop-color="#006b8f"/>
+    </linearGradient>
+    <linearGradient id="pgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#336791"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Card -->
+  <rect x="8" y="8" width="112" height="112" rx="24" fill="url(#bgGrad)" stroke="#334155" stroke-width="3"/>
+  
+  <!-- Cylinder 1 (MariaDB) -->
+  <ellipse cx="44" cy="40" rx="24" ry="10" fill="#008cb4"/>
+  <path d="M 20 40 v 20 c 0 5.5 10.7 10 24 10 s 24 -4.5 24 -10 v -20" fill="none" stroke="#00b4d8" stroke-width="4"/>
+  <path d="M 20 60 v 20 c 0 5.5 10.7 10 24 10 s 24 -4.5 24 -10 v -20" fill="none" stroke="#008cb4" stroke-width="4"/>
+  <ellipse cx="44" cy="40" rx="24" ry="10" fill="none" stroke="#38bdf8" stroke-width="3"/>
+
+  <!-- Cylinder 2 (PostgreSQL) -->
+  <ellipse cx="84" cy="56" rx="24" ry="10" fill="#2563eb"/>
+  <path d="M 60 56 v 20 c 0 5.5 10.7 10 24 10 s 24 -4.5 24 -10 v -20" fill="none" stroke="#3b82f6" stroke-width="4"/>
+  <path d="M 60 76 v 20 c 0 5.5 10.7 10 24 10 s 24 -4.5 24 -10 v -20" fill="none" stroke="#1d4ed8" stroke-width="4"/>
+  <ellipse cx="84" cy="56" rx="24" ry="10" fill="none" stroke="#60a5fa" stroke-width="3"/>
+
+  <!-- Gear / Control overlay -->
+  <circle cx="96" cy="32" r="14" fill="#10b981" stroke="#ffffff" stroke-width="3"/>
+  <path d="M 96 24 v 16 M 88 32 h 16" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+</svg>

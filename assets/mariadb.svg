@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <rect width="128" height="128" rx="20" fill="#003545"/>
+  <!-- Sea Dragon / Seal silhouette style for MariaDB -->
+  <path d="M 32 88 C 24 70 34 40 54 36 C 68 34 76 44 82 36 C 88 28 92 20 100 24 C 104 26 102 34 96 38 C 90 42 82 46 80 54 C 76 66 84 74 96 78 C 104 80 108 86 100 92 C 86 102 54 104 32 88 Z" fill="#00a3cc"/>
+  <path d="M 44 76 C 40 64 48 48 60 46 C 70 44 76 52 82 50 C 86 48 88 42 94 44 C 96 46 94 50 90 52 C 86 56 80 58 78 64 C 74 72 80 78 88 80 C 76 90 56 92 44 76 Z" fill="#ffffff" opacity="0.9"/>
+  <circle cx="88" cy="30" r="3" fill="#ffffff"/>
+  <text x="64" y="116" font-family="sans-serif" font-weight="bold" font-size="14" fill="#00d4ff" text-anchor="middle">MariaDB</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Rounded Squircle -->
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#bg)" stroke="#334155" stroke-width="2"/>
+  
+  <!-- Subsystem Layer Rings -->
+  <circle cx="64" cy="64" r="48" fill="none" stroke="url(#accent)" stroke-width="3" stroke-dasharray="8 6" opacity="0.6"/>
+  <circle cx="64" cy="64" r="36" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+  
+  <!-- Tux / Linux Penguin Silhouette & Layer Symbol -->
+  <path d="M64 36 C55 36 48 43 48 52 C48 58 50 63 53 66 C49 71 45 78 45 86 C45 92 50 96 64 96 C78 96 83 92 83 86 C83 78 79 71 75 66 C78 63 80 58 80 52 C80 43 73 36 64 36 Z" fill="#F8FAFC"/>
+  <ellipse cx="64" cy="74" rx="11" ry="14" fill="#0F172A"/>
+  <circle cx="60" cy="48" r="2.5" fill="#0F172A"/>
+  <circle cx="68" cy="48" r="2.5" fill="#0F172A"/>
+  <path d="M60 54 Q64 59 68 54 Z" fill="#F59E0B"/>
+  
+  <!-- Terminal Prompt Accent Symbol in Bottom Right -->
+  <rect x="76" y="76" width="38" height="34" rx="8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.5"/>
+  <text x="82" y="98" font-family="monospace" font-size="16" font-weight="bold" fill="#FFFFFF">&gt;_</text>
+</svg>

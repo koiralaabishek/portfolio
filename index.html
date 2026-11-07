@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abishek Koirala | Systems & Desktop Software Engineer</title>
+  <meta name="description" content="Portfolio of Abishek Koirala - Systems & Desktop Software Engineer specializing in Linux desktop tools, C++20 subsystems, Flutter, GTK, and full-stack software.">
+  <meta name="author" content="Abishek Koirala">
+  <meta name="keywords" content="Abishek Koirala, Glide Files, DBStack, LxSub, Linux Subsystem for Linux, Systems Engineer, Linux Developer, Flutter Desktop, GTK3, C++20">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://koiralaabishek.github.io/portfolio/">
+  <meta property="og:title" content="Abishek Koirala | Systems & Desktop Software Engineer">
+  <meta property="og:description" content="Creator of Glide Files, DBStack Control Panel, and LxSub (Linux Subsystem for Linux).">
+  <meta property="og:image" content="assets/glide-files.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://koiralaabishek.github.io/portfolio/">
+  <meta property="twitter:title" content="Abishek Koirala | Systems & Desktop Software Engineer">
+  <meta property="twitter:description" content="Creator of Glide Files, DBStack Control Panel, and LxSub (Linux Subsystem for Linux).">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/lxsub.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-prompt">~/</span><span class="logo-name">abishek</span><span class="logo-cursor">_</span>
+      </a>
+
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#terminal-section" class="nav-link">Terminal</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+            <i class="fa-solid fa-moon moon-icon"></i>
+            <i class="fa-solid fa-sun sun-icon"></i>
+          </button>
+          <a href="https://github.com/koiralaabishek" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-glow glow-1"></div>
+      <div class="hero-bg-glow glow-2"></div>
+      
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Open to Software Engineering & Systems Roles</span>
+        </div>
+
+        <h1 class="hero-title">
+          Engineering High-Performance <br>
+          <span class="gradient-text">Linux Desktop & Systems</span> Software
+        </h1>
+
+        <p class="hero-subtitle">
+          I'm <strong>Abishek Koirala</strong>, a Software Engineer crafting native Linux utilities, modern desktop experiences, and low-level subsystems using <strong>C++20, Linux Namespaces, Flutter, GTK3,</strong> and <strong>Python</strong>.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fa-solid fa-laptop-code"></i>
+            <span>Explore Featured Projects</span>
+          </a>
+          <a href="#terminal-section" class="btn btn-secondary">
+            <i class="fa-solid fa-terminal"></i>
+            <span>Interactive Terminal</span>
+          </a>
+          <a href="https://github.com/koiralaabishek" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+            <i class="fa-brands fa-github"></i>
+            <span>github.com/koiralaabishek</span>
+          </a>
+        </div>
+
+        <!-- Metric Badges -->
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-number">3+</div>
+            <div class="stat-label">Core Linux Ecosystem Projects</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <div class="stat-number">C++20 & Flutter</div>
+            <div class="stat-label">Native Low-Level & GUI Stack</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <div class="stat-number">20+</div>
+            <div class="stat-label">Public Repositories on GitHub</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Open Source & Community Driven</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// IDENTITY & BACKGROUND</span>
+          <h2 class="section-title">Bridging Low-Level Systems and Elegant UI</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card profile-card">
+            <div class="profile-header">
+              <img src="assets/avatar.png" alt="Abishek Koirala" class="profile-avatar" onerror="this.src='https://avatars.githubusercontent.com/u/176120195?v=4'">
+              <div class="profile-meta">
+                <h3>Abishek Koirala</h3>
+                <p class="role-text"><i class="fa-solid fa-code"></i> Systems & Desktop Engineer</p>
+                <p class="location-text"><i class="fa-solid fa-location-dot"></i> Nepal (UTC+5:45)</p>
+              </div>
+            </div>
+            <p class="profile-bio">
+              Passionate about the Linux kernel ecosystem, containerization primitives, and modern graphical interfaces. I build tools that empower developers—from native database control panels and isolated lightweight subsystems to aesthetic, high-speed file managers.
+            </p>
+            <div class="profile-tags">
+              <span class="pill-tag"><i class="fa-brands fa-linux"></i> Linux Internals</span>
+              <span class="pill-tag"><i class="fa-solid fa-microchip"></i> C++20 Namespaces</span>
+              <span class="pill-tag"><i class="fa-solid fa-window-maximize"></i> Flutter Desktop</span>
+              <span class="pill-tag"><i class="fa-brands fa-python"></i> GTK 3 / PyGObject</span>
+              <span class="pill-tag"><i class="fa-solid fa-database"></i> PostgreSQL & MariaDB</span>
+            </div>
+          </div>
+
+          <div class="about-card principles-card">
+            <h3 class="card-subtitle"><i class="fa-solid fa-compass"></i> Engineering Philosophy</h3>
+            <ul class="principles-list">
+              <li>
+                <div class="principle-icon"><i class="fa-solid fa-bolt"></i></div>
+                <div>
+                  <strong>Performance Without Bloat</strong>
+                  <p>Leveraging native Linux primitives like `cgroups v2`, `overlayfs`, and chunked binary I/O buffers for blazing speeds with minimal RAM footprint.</p>
+                </div>
+              </li>
+              <li>
+                <div class="principle-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <div>
+                  <strong>Cupertino Aesthetics on Linux</strong>
+                  <p>Refusing to compromise on design. Bringing polished fluid layouts, column views, and smooth micro-animations to Linux desktop environments.</p>
+                </div>
+              </li>
+              <li>
+                <div class="principle-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div>
+                  <strong>Safe & Non-Destructive Environments</strong>
+                  <p>Enforcing security best practices via Polkit privilege escalation, sandboxed Linux namespaces, and instant point-in-time snapshots.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// SHOWCASE</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">Handcrafted solutions engineered for performance, developer experience, and modern Linux desktops.</p>
+        </div>
+
+        <!-- Featured Project 1: Glide Files -->
+        <article class="project-featured" id="glide-files">
+          <div class="project-content">
+            <div class="project-badge-row">
+              <span class="badge-accent">Flagship Desktop App</span>
+              <span class="badge-tag">v2.3.0 Available</span>
+            </div>
+            <h3 class="project-title">
+              <img src="assets/glide-files.png" alt="Glide Files Icon" class="project-mini-icon">
+              Glide Files
+            </h3>
+            <p class="project-tagline">The elegance of macOS Finder, engineered for modern Linux desktops.</p>
+            <p class="project-description">
+              A minimalist, high-performance Linux file manager built from the ground up using Flutter and GTK3. Glide combines Cupertino-level design aesthetics with robust Linux file-system capabilities, offering a desktop experience that is fluid, responsive, and visually stunning.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-wifi highlight-icon"></i>
+                <div>
+                  <strong>GlideDrop Cross-Platform Engine</strong>
+                  <span>Peer-to-peer Wi-Fi file transfers across Android, iOS, Windows, & Linux with zero setup and a QR WebDrop Gateway.</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-columns highlight-icon"></i>
+                <div>
+                  <strong>Cupertino UI & Column View</strong>
+                  <span>Multi-column navigation, Spacebar Quick Look previews, collapsible sidebars, and GTK native drag-and-drop.</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-gauge-high highlight-icon"></i>
+                <div>
+                  <strong>20MB Chunked Buffer Pipeline</strong>
+                  <span>Optimized `RandomAccessFile` chunked streams for multi-gigabyte transfers with zero UI lag or memory bloat.</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-file-zipper highlight-icon"></i>
+                <div>
+                  <strong>Universal Archive Engine (50+ Formats)</strong>
+                  <span>High-speed compression & extraction for .zip, .7z, .tar.gz, .tar.zst, .rar, .deb, and .rpm with live progress.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-pill"><i class="fa-brands fa-flutter"></i> Flutter</span>
+              <span class="tech-pill">Dart</span>
+              <span class="tech-pill"><i class="fa-brands fa-linux"></i> GTK 3</span>
+              <span class="tech-pill">inotify Watcher</span>
+              <span class="tech-pill">AirDrop Protocol</span>
+              <span class="tech-pill">Debian (.deb)</span>
+              <span class="tech-pill">Flatpak</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/koiralaabishek/Glide-Files-" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <i class="fa-brands fa-github"></i>
+                <span>View on GitHub</span>
+              </a>
+              <a href="https://github.com/koiralaabishek/Glide-Files-#-building--running-locally" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <i class="fa-solid fa-download"></i>
+                <span>Install .deb / Build Guide</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-visual">
+            <div class="mockup-window">
+              <div class="mockup-header">
+                <div class="mockup-buttons">
+                  <span class="mock-btn mock-close"></span>
+                  <span class="mock-btn mock-min"></span>
+                  <span class="mock-btn mock-max"></span>
+                </div>
+                <div class="mockup-title">Glide Files — Desktop / Column View</div>
+                <div class="mockup-view-toggles">
+                  <i class="fa-solid fa-table-cells-large active"></i>
+                  <i class="fa-solid fa-bars"></i>
+                  <i class="fa-solid fa-table-columns"></i>
+                </div>
+              </div>
+              <div class="mockup-body mockup-glide">
+                <div class="glide-sidebar">
+                  <div class="sidebar-category">Favorites</div>
+                  <div class="sidebar-item active"><i class="fa-solid fa-house"></i> Home</div>
+                  <div class="sidebar-item"><i class="fa-solid fa-download"></i> Downloads</div>
+                  <div class="sidebar-item"><i class="fa-solid fa-folder"></i> Documents</div>
+                  <div class="sidebar-item"><i class="fa-solid fa-code-branch"></i> Projects</div>
+                  <div class="sidebar-category">Network</div>
+                  <div class="sidebar-item"><i class="fa-solid fa-tower-broadcast text-blue"></i> GlideDrop (Active)</div>
+                </div>
+                <div class="glide-columns">
+                  <div class="glide-col">
+                    <div class="col-item"><i class="fa-solid fa-folder text-blue"></i> Desktop</div>
+                    <div class="col-item selected"><i class="fa-solid fa-folder text-blue"></i> Projects</div>
+                    <div class="col-item"><i class="fa-solid fa-folder text-blue"></i> Music</div>
+                    <div class="col-item"><i class="fa-solid fa-folder text-blue"></i> Pictures</div>
+                  </div>
+                  <div class="glide-col">
+                    <div class="col-item selected"><i class="fa-solid fa-folder-gear text-purple"></i> Glide-Files-</div>
+                    <div class="col-item"><i class="fa-solid fa-folder-gear text-purple"></i> DBStack</div>
+                    <div class="col-item"><i class="fa-solid fa-folder-gear text-purple"></i> Linux-SubSytem</div>
+                  </div>
+                  <div class="glide-col preview-col">
+                    <div class="preview-icon-wrapper">
+                      <img src="assets/glide-files.png" alt="Glide Files" class="preview-app-icon">
+                    </div>
+                    <div class="preview-filename">glide-files_2.3.0_amd64.deb</div>
+                    <div class="preview-meta">Debian Package • 34.2 MB</div>
+                    <div class="preview-meta-pill">Ready to Deploy</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Featured Project 2: DBStack -->
+        <article class="project-featured reverse" id="dbstack">
+          <div class="project-content">
+            <div class="project-badge-row">
+              <span class="badge-accent">System Administration</span>
+              <span class="badge-tag">GTK3 Native</span>
+            </div>
+            <h3 class="project-title">
+              <img src="assets/dbstack.svg" alt="DBStack Icon" class="project-mini-icon">
+              DBStack Control Panel
+            </h3>
+            <p class="project-tagline">Modern GTK3 Control Panel to install, configure & manage MariaDB and PostgreSQL on Linux.</p>
+            <p class="project-description">
+              A lightweight Linux management utility designed to eliminate manual CLI script headaches. Features a sleek XAMPP-inspired dashboard providing instant 1-click database installation, real-time PID inspection, secure privilege escalation, and interactive query management.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-server highlight-icon"></i>
+                <div>
+                  <strong>Unified Live Dashboard</strong>
+                  <span>Instant status cards for MariaDB (Port 3306) and PostgreSQL (Port 5432) with live PID, systemd start/stop/restart, and boot toggles.</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-box-archive highlight-icon"></i>
+                <div>
+                  <strong>1-Click Multi-Distro Engine Installer</strong>
+                  <span>Automated repository and package deployment across Debian, Ubuntu, Fedora, Arch Linux, and openSUSE with `pkexec` log streaming.</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-database highlight-icon"></i>
+                <div>
+                  <strong>Built-in SQL Manager & Connection Tester</strong>
+                  <span>Asynchronous non-blocking connection tester, quick query shortcuts (`SHOW DATABASES;`), and interactive root password setup.</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-file-lines highlight-icon"></i>
+                <div>
+                  <strong>Live Log Viewer & Config Editor</strong>
+                  <span>Integrated GTK code editor for `my.cnf` and `postgresql.conf` alongside live `journalctl` service log streams.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-pill"><i class="fa-brands fa-python"></i> Python 3</span>
+              <span class="tech-pill"><i class="fa-brands fa-linux"></i> GTK 3 / PyGObject</span>
+              <span class="tech-pill">Systemd</span>
+              <span class="tech-pill">Polkit (pkexec)</span>
+              <span class="tech-pill"><i class="fa-solid fa-database"></i> MariaDB</span>
+              <span class="tech-pill"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+              <span class="tech-pill">Cross-Distro</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/koiralaabishek/DBStack" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <i class="fa-brands fa-github"></i>
+                <span>View on GitHub</span>
+              </a>
+              <a href="https://github.com/koiralaabishek/DBStack#setup" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <i class="fa-solid fa-terminal"></i>
+                <span>Run Setup Script</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-visual">
+            <div class="mockup-window">
+              <div class="mockup-header">
+                <div class="mockup-buttons">
+                  <span class="mock-btn mock-close"></span>
+                  <span class="mock-btn mock-min"></span>
+                  <span class="mock-btn mock-max"></span>
+                </div>
+                <div class="mockup-title">DBStack Control Panel v1.0.0</div>
+              </div>
+              <div class="mockup-body mockup-dbstack">
+                <div class="db-service-card active-service">
+                  <div class="service-left">
+                    <img src="assets/mariadb.svg" alt="MariaDB" class="service-icon">
+                    <div>
+                      <div class="service-name">MariaDB Server</div>
+                      <div class="service-sub"><span class="badge-dot-green"></span> Port 3306 • PID 14209</div>
+                    </div>
+                  </div>
+                  <div class="service-actions">
+                    <span class="btn-micro btn-stop"><i class="fa-solid fa-stop"></i> Stop</span>
+                    <span class="btn-micro btn-restart"><i class="fa-solid fa-rotate-right"></i></span>
+                    <span class="btn-micro btn-shell">SQL</span>
+                  </div>
+                </div>
+
+                <div class="db-service-card active-service">
+                  <div class="service-left">
+                    <img src="assets/postgresql.svg" alt="PostgreSQL" class="service-icon">
+                    <div>
+                      <div class="service-name">PostgreSQL Database</div>
+                      <div class="service-sub"><span class="badge-dot-green"></span> Port 5432 • PID 15881</div>
+                    </div>
+                  </div>
+                  <div class="service-actions">
+                    <span class="btn-micro btn-stop"><i class="fa-solid fa-stop"></i> Stop</span>
+                    <span class="btn-micro btn-restart"><i class="fa-solid fa-rotate-right"></i></span>
+                    <span class="btn-micro btn-shell">SQL</span>
+                  </div>
+                </div>
+
+                <!-- Live Log Preview in Card -->
+                <div class="db-log-preview">
+                  <div class="db-log-header">
+                    <span><i class="fa-solid fa-terminal"></i> journalctl -u mariadb --follow</span>
+                    <span class="log-status-badge">LIVE</span>
+                  </div>
+                  <div class="db-log-body">
+                    <span class="log-time">[20:35:10]</span> [Note] mysqld: ready for connections. Version: '10.11.8-MariaDB'<br>
+                    <span class="log-time">[20:35:12]</span> [Systemd] MariaDB database server active and running.<br>
+                    <span class="log-time">[20:35:18]</span> [Postgres] database system was not properly shut down; automatic recovery in progress<br>
+                    <span class="log-time">[20:35:19]</span> [Postgres] database system is ready to accept connections
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Featured Project 3: LxSub (Linux Subsystem for Linux) -->
+        <article class="project-featured" id="lxsub">
+          <div class="project-content">
+            <div class="project-badge-row">
+              <span class="badge-accent">Low-Level Systems Architecture</span>
+              <span class="badge-tag">C++20 & Namespaces</span>
+            </div>
+            <h3 class="project-title">
+              <img src="assets/lxsub.svg" alt="LxSub Icon" class="project-mini-icon">
+              LxSub — Linux Subsystem for Linux
+            </h3>
+            <p class="project-tagline">WSL for Linux desktops & servers. Run, snapshot, clone, and manage isolated distros side-by-side.</p>
+            <p class="project-description">
+              A native, ultra-lightweight subsystem for Linux that brings the convenience and isolation of WSL to Linux distributions. Built using modern C++20, Linux Namespaces (PID, Mount, UTS, IPC, Network), Cgroups v2 resource capping, and Copy-on-Write (COW) OverlayFS storage.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-cubes highlight-icon"></i>
+                <div>
+                  <strong>Multi-Distro Sandbox Isolation</strong>
+                  <span>Instantly spin up Ubuntu, Debian, Kali, Arch Linux, Fedora, Alpine, openSUSE, or Rocky Linux side-by-side without hypervisor virtualization.</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-camera-retro highlight-icon"></i>
+                <div>
+                  <strong>Instant Point-in-Time Snapshots</strong>
+                  <span>Create sub-second snapshots and rapid rollback points using lightweight OverlayFS diff layers with zero disk duplication.</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-terminal highlight-icon"></i>
+                <div>
+                  <strong>Familiar `lxrun` Command Line Utility</strong>
+                  <span>Intuitive CLI inspired by WSL (`lxrun install &lt;distro&gt;`, `lxrun run`, `lxrun snapshot`, `lxrun clone`, `lxrun stats`).</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-sliders highlight-icon"></i>
+                <div>
+                  <strong>Cgroups v2 Resource Governance</strong>
+                  <span>Strict memory, CPU, and process ceiling limits preventing runaway scripts or noisy neighbor workloads.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-pill"><i class="fa-solid fa-code"></i> C++20</span>
+              <span class="tech-pill"><i class="fa-brands fa-linux"></i> Linux Namespaces</span>
+              <span class="tech-pill">Cgroups v2</span>
+              <span class="tech-pill">OverlayFS (COW)</span>
+              <span class="tech-pill">Systemd Daemon</span>
+              <span class="tech-pill">D-Bus IPC</span>
+              <span class="tech-pill">CMake</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/koiralaabishek/Linux-SubSytem-Linux" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <i class="fa-brands fa-github"></i>
+                <span>View on GitHub</span>
+              </a>
+              <a href="https://github.com/koiralaabishek/Linux-SubSytem-Linux#quick-start-guide" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Quick Start Guide</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-visual">
+            <div class="mockup-window">
+              <div class="mockup-header">
+                <div class="mockup-buttons">
+                  <span class="mock-btn mock-close"></span>
+                  <span class="mock-btn mock-min"></span>
+                  <span class="mock-btn mock-max"></span>
+                </div>
+                <div class="mockup-title">lxsub-user.service — lxrun</div>
+              </div>
+              <div class="mockup-body mockup-terminal-demo">
+                <div class="term-line"><span class="term-user">abi@workstation</span>:<span class="term-dir">~</span>$ lxrun list</div>
+                <div class="term-table">
+                  <div class="term-header-row">NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STATUS&nbsp;&nbsp;&nbsp;VERSION&nbsp;&nbsp;&nbsp;&nbsp;STORAGE&nbsp;&nbsp;&nbsp;ISOLATION</div>
+                  <div class="term-row"><span class="text-green">* Ubuntu-24.04</span> Running&nbsp;&nbsp;24.04-LTS&nbsp;&nbsp;OverlayFS&nbsp;Namespaces</div>
+                  <div class="term-row">&nbsp;&nbsp;Arch-Linux&nbsp;&nbsp;&nbsp;Stopped&nbsp;&nbsp;Rolling&nbsp;&nbsp;&nbsp;&nbsp;OverlayFS&nbsp;Namespaces</div>
+                  <div class="term-row">&nbsp;&nbsp;Kali-Linux&nbsp;&nbsp;&nbsp;Stopped&nbsp;&nbsp;2024.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OverlayFS&nbsp;Namespaces</div>
+                  <div class="term-row">&nbsp;&nbsp;Alpine-Edge&nbsp;&nbsp;Running&nbsp;&nbsp;3.20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OverlayFS&nbsp;Namespaces</div>
+                </div>
+                <div class="term-line mt-2"><span class="term-user">abi@workstation</span>:<span class="term-dir">~</span>$ lxrun run Ubuntu-24.04</div>
+                <div class="term-output text-blue">Connecting to isolated namespace (PID 28410, Cgroup: lxsub/ubuntu)...</div>
+                <div class="term-line"><span class="term-root">root@ubuntu-guest</span>:<span class="term-dir">~</span># cat /etc/os-release | grep PRETTY_NAME</div>
+                <div class="term-output text-yellow">PRETTY_NAME="Ubuntu 24.04 LTS (Noble Numbat)"</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- More Projects Grid -->
+        <div class="other-projects">
+          <h3 class="subsection-title">More Noteworthy Projects</h3>
+          <div class="other-grid">
+            <div class="other-card">
+              <div class="other-top">
+                <i class="fa-solid fa-music other-icon"></i>
+                <a href="https://github.com/koiralaabishek/Aura-Music-Player-for-linux" target="_blank" rel="noopener noreferrer" class="other-link"><i class="fa-brands fa-github"></i></a>
+              </div>
+              <h4>Aura Music Player for Linux</h4>
+              <p>A modern layout Linux desktop music player built with focus on rich audio controls, sleek UI presentation, and low CPU usage.</p>
+              <div class="other-tags">
+                <span>Flutter</span>
+                <span>Linux Desktop</span>
+                <span>Audio Engine</span>
+              </div>
+            </div>
+
+            <div class="other-card">
+              <div class="other-top">
+                <i class="fa-brands fa-whatsapp other-icon"></i>
+                <a href="https://github.com/koiralaabishek/whatsapp-linux-unofficial" target="_blank" rel="noopener noreferrer" class="other-link"><i class="fa-brands fa-github"></i></a>
+              </div>
+              <h4>WhatsApp Linux Unofficial</h4>
+              <p>Native desktop client container for WhatsApp on Linux distributions with system tray integration and notifications.</p>
+              <div class="other-tags">
+                <span>Desktop Integration</span>
+                <span>Linux Tray</span>
+                <span>WebEngine</span>
+              </div>
+            </div>
+
+            <div class="other-card">
+              <div class="other-top">
+                <i class="fa-solid fa-brain other-icon"></i>
+                <a href="https://github.com/koiralaabishek/AI-proposal-generator-Django" target="_blank" rel="noopener noreferrer" class="other-link"><i class="fa-brands fa-github"></i></a>
+              </div>
+              <h4>AI Proposal Generator</h4>
+              <p>Full-stack Django web application generating client proposals and technical project scopes using AI prompt pipelines.</p>
+              <div class="other-tags">
+                <span>Django</span>
+                <span>Python</span>
+                <span>REST API</span>
+              </div>
+            </div>
+
+            <div class="other-card">
+              <div class="other-top">
+                <i class="fa-solid fa-wallet other-icon"></i>
+                <a href="https://github.com/koiralaabishek/fintech_nepalpayment_wallet" target="_blank" rel="noopener noreferrer" class="other-link"><i class="fa-brands fa-github"></i></a>
+              </div>
+              <h4>FinTech Payment Wallet</h4>
+              <p>Secure financial transaction backend integrating digital payment gateway flows and digital wallet account ledgers.</p>
+              <div class="other-tags">
+                <span>PHP</span>
+                <span>Laravel</span>
+                <span>Fintech</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Interactive Terminal Widget -->
+    <section class="terminal-section" id="terminal-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// INTERACTIVE SHELL</span>
+          <h2 class="section-title">Live Systems Terminal</h2>
+          <p class="section-desc">Test out interactive CLI commands right in your browser. Click any preset pill or type commands below.</p>
+        </div>
+
+        <div class="interactive-terminal-wrapper">
+          <div class="terminal-header">
+            <div class="term-buttons">
+              <span class="term-btn term-close"></span>
+              <span class="term-btn term-min"></span>
+              <span class="term-btn term-max"></span>
+            </div>
+            <div class="term-title">
+              <i class="fa-solid fa-terminal"></i> abishek@portfolio-shell: ~/projects
+            </div>
+            <div class="term-status">
+              <span class="badge-dot-green"></span> ONLINE
+            </div>
+          </div>
+
+          <div class="terminal-body" id="terminalOutput">
+            <div class="term-welcome">
+              Welcome to <strong>Abishek's Systems Console</strong>. Type <span class="term-highlight">help</span> to list commands, or click any command pill below to execute immediately.
+            </div>
+          </div>
+
+          <!-- Quick click command suggestions -->
+          <div class="terminal-quick-actions">
+            <span class="quick-title">Quick commands:</span>
+            <button class="quick-cmd" data-cmd="lxrun list">lxrun list</button>
+            <button class="quick-cmd" data-cmd="dbstack status">dbstack status</button>
+            <button class="quick-cmd" data-cmd="glide --version">glide --version</button>
+            <button class="quick-cmd" data-cmd="skills">skills</button>
+            <button class="quick-cmd" data-cmd="about">about</button>
+            <button class="quick-cmd" data-cmd="clear">clear</button>
+          </div>
+
+          <form class="terminal-input-bar" id="terminalForm">
+            <span class="term-prompt">guest@portfolio:~$</span>
+            <input type="text" id="terminalInput" class="term-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Type a command (try 'help')...">
+            <button type="submit" class="term-submit-btn"><i class="fa-solid fa-arrow-turn-down"></i></button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// TECHNICAL CAPABILITIES</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-desc">A deep technical foundation across low-level Linux systems, modern GUI architecture, and full-stack software.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Systems & Linux -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <i class="fa-brands fa-linux skill-icon text-cyan"></i>
+              <h3>Systems & Linux Engineering</h3>
+            </div>
+            <ul class="skill-list">
+              <li><i class="fa-solid fa-check"></i> C++20 / Modern Standard Library</li>
+              <li><i class="fa-solid fa-check"></i> Linux Namespaces (PID, Mount, Net, UTS)</li>
+              <li><i class="fa-solid fa-check"></i> Cgroups v2 Resource Governance</li>
+              <li><i class="fa-solid fa-check"></i> OverlayFS & Copy-on-Write Storage</li>
+              <li><i class="fa-solid fa-check"></i> Systemd Services & User Daemons</li>
+              <li><i class="fa-solid fa-check"></i> D-Bus IPC & Polkit / pkexec Security</li>
+              <li><i class="fa-solid fa-check"></i> POSIX File I/O & inotify Watchers</li>
+              <li><i class="fa-solid fa-check"></i> Bash & Advanced Shell Automation</li>
+            </ul>
+          </div>
+
+          <!-- Desktop & Cross-Platform -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <i class="fa-solid fa-desktop skill-icon text-blue"></i>
+              <h3>Desktop & Graphical Apps</h3>
+            </div>
+            <ul class="skill-list">
+              <li><i class="fa-solid fa-check"></i> Flutter Desktop (Linux, Windows, macOS)</li>
+              <li><i class="fa-solid fa-check"></i> Dart Language & Asynchronous Pipelines</li>
+              <li><i class="fa-solid fa-check"></i> GTK 3 & Libadwaita / PyGObject</li>
+              <li><i class="fa-solid fa-check"></i> Cupertino & Modern UI Layouts</li>
+              <li><i class="fa-solid fa-check"></i> Debian Packaging (.deb dpkg / debhelper)</li>
+              <li><i class="fa-solid fa-check"></i> Flatpak & AppStream Metadata</li>
+              <li><i class="fa-solid fa-check"></i> Desktop Integration & XDG Specs</li>
+              <li><i class="fa-solid fa-check"></i> UDP Peer Discovery & WebSockets</li>
+            </ul>
+          </div>
+
+          <!-- Backend & Database Systems -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <i class="fa-solid fa-database skill-icon text-purple"></i>
+              <h3>Backend & Database Systems</h3>
+            </div>
+            <ul class="skill-list">
+              <li><i class="fa-solid fa-check"></i> MariaDB & MySQL Database Engines</li>
+              <li><i class="fa-solid fa-check"></i> PostgreSQL Server Administration</li>
+              <li><i class="fa-solid fa-check"></i> Python 3 & Django Framework</li>
+              <li><i class="fa-solid fa-check"></i> PHP & Laravel Ecosystem</li>
+              <li><i class="fa-solid fa-check"></i> RESTful API Architecture</li>
+              <li><i class="fa-solid fa-check"></i> Authentication & OAuth Workflows</li>
+              <li><i class="fa-solid fa-check"></i> Git, GitHub Actions & CI/CD Pipelines</li>
+              <li><i class="fa-solid fa-check"></i> CMake & Ninja Build Systems</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Connect Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <div class="contact-info">
+            <span class="section-tag">// GET IN TOUCH</span>
+            <h2 class="contact-title">Let's Build Something Exceptional</h2>
+            <p class="contact-desc">
+              Whether you want to discuss systems programming, Linux desktop software, collaboration opportunities, or hiring, my inbox is always open.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-row">
+                <i class="fa-solid fa-envelope contact-icon"></i>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:koirala.abishek@hotmail.com" class="contact-value">koirala.abishek@hotmail.com</a>
+                </div>
+              </div>
+              <div class="contact-row">
+                <i class="fa-brands fa-github contact-icon"></i>
+                <div>
+                  <span class="contact-label">GitHub</span>
+                  <a href="https://github.com/koiralaabishek" target="_blank" rel="noopener noreferrer" class="contact-value">github.com/koiralaabishek</a>
+                </div>
+              </div>
+              <div class="contact-row">
+                <i class="fa-solid fa-location-dot contact-icon"></i>
+                <div>
+                  <span class="contact-label">Location</span>
+                  <span class="contact-value">Kathmandu, Nepal</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-action-card">
+            <h3>Direct Contact</h3>
+            <p>Send a message directly via email to start a conversation.</p>
+            <a href="mailto:koirala.abishek@hotmail.com?subject=Hello%20Abishek%20-%20From%20Portfolio" class="btn btn-primary btn-block">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Send Email</span>
+            </a>
+            <a href="https://github.com/koiralaabishek" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-block">
+              <i class="fa-brands fa-github"></i>
+              <span>Follow on GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="footer-brand">Abishek Koirala</span>
+        <span class="footer-copy">© 2026. Built with modern web standards. Hosted on GitHub Pages.</span>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Back to Top <i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
