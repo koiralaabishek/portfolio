@@ -91,7 +91,7 @@
         </h1>
 
         <p class="hero-subtitle">
-          I'm <strong>Abishek Koirala</strong>, a Software Engineer crafting native Linux utilities, modern desktop experiences, and low-level subsystems using <strong>C++20, Linux Namespaces, Flutter, GTK3,</strong> and <strong>Python</strong>.
+          I'm <strong>Abishek Koirala</strong>, a Software Engineer crafting native Linux utilities, modern desktop experiences, low-level subsystems, and distributed SaaS platforms using <strong>C++20, Linux Namespaces, Flutter, Python/Django,</strong> and <strong>FastAPI</strong>.
         </p>
 
         <div class="hero-cta">
@@ -112,8 +112,8 @@
         <!-- Metric Badges -->
         <div class="hero-stats">
           <div class="stat-card">
-            <div class="stat-number">3+</div>
-            <div class="stat-label">Core Linux Ecosystem Projects</div>
+            <div class="stat-number">4+</div>
+            <div class="stat-label">Flagship Linux & SaaS Projects</div>
           </div>
           <div class="stat-divider"></div>
           <div class="stat-card">
@@ -548,6 +548,158 @@
           </div>
         </article>
 
+        <!-- Featured Project 4: NextGen AI POS & ERP -->
+        <article class="project-featured reverse" id="nextgen-pos">
+          <div class="project-content">
+            <div class="project-badge-row">
+              <span class="badge-accent">Multi-Tenant Cloud SaaS</span>
+              <span class="badge-tag">AI-Powered & Offline POS</span>
+            </div>
+            <h3 class="project-title">
+              <img src="assets/nextgen-pos.svg" alt="NextGen POS Icon" class="project-mini-icon">
+              NextGen AI POS &amp; ERP
+            </h3>
+            <p class="project-tagline">Offline-first multi-tenant POS &amp; ERP platform with AI demand forecasting and Nepal IRD fiscal compliance.</p>
+            <p class="project-description">
+              An enterprise-grade SaaS platform engineered for Retail, Supermarkets, Restaurants, and Wholesale Distribution. Features a high-velocity offline POS terminal backed by Dexie.js, a comprehensive double-entry ERP accounting engine with Nepal IRD VAT registers, and an autonomous FastAPI microservice for Holt-Winters demand forecasting.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-cash-register highlight-icon"></i>
+                <div>
+                  <strong>Offline-First Checkout Engine &amp; Shifts</strong>
+                  <span>Dexie.js IndexedDB local queueing with background auto-sync, row-locking concurrency (<code>select_for_update</code>), shift cash reconciliation, and 58mm/80mm ESC/POS thermal receipts.</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-file-invoice-dollar highlight-icon"></i>
+                <div>
+                  <strong>Nepal IRD Fiscal Compliance &amp; Double-Entry Ledgers</strong>
+                  <span>Gapless sequential invoice audit trails, 13% Output VAT ledger posting, Annex 5 (Sales Book) &amp; Annex 7 (Purchase Book), and immutable Credit Notes (फिर्ता बिल).</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-brain highlight-icon"></i>
+                <div>
+                  <strong>FastAPI AI Demand Forecasting &amp; Bilingual Copilot</strong>
+                  <span>Holt-Winters exponential smoothing, grocery basket co-occurrence affinity cross-selling, and natural language business insights in Nepali (देवनागरी) and English.</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-utensils highlight-icon"></i>
+                <div>
+                  <strong>Industry Modules: Restaurant KDS &amp; Wholesale Khata</strong>
+                  <span>Table floor routing with live KDS order lifecycle (<code>PENDING</code> → <code>SERVED</code>), bill splitting, tiered volume discounts, and customer Khata debt settlement.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-pill"><i class="fa-brands fa-python"></i> Django 6 + DRF</span>
+              <span class="tech-pill"><i class="fa-brands fa-react"></i> React 19</span>
+              <span class="tech-pill">TypeScript</span>
+              <span class="tech-pill">FastAPI</span>
+              <span class="tech-pill"><i class="fa-solid fa-database"></i> PostgreSQL 16</span>
+              <span class="tech-pill">Redis + Celery</span>
+              <span class="tech-pill">Dexie.js</span>
+              <span class="tech-pill"><i class="fa-brands fa-docker"></i> Docker</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/koiralaabishek/NextGen-AI-POS-ERP" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <i class="fa-brands fa-github"></i>
+                <span>View on GitHub</span>
+              </a>
+              <a href="https://github.com/koiralaabishek/NextGen-AI-POS-ERP#readme" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Explore Blueprint &amp; Docs</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-visual">
+            <div class="mockup-window">
+              <div class="mockup-header">
+                <div class="mockup-buttons">
+                  <span class="mock-btn mock-close"></span>
+                  <span class="mock-btn mock-min"></span>
+                  <span class="mock-btn mock-max"></span>
+                </div>
+                <div class="mockup-title">POS Terminal — Namaste Supermarket Pvt. Ltd.</div>
+                <div class="mockup-view-toggles">
+                  <i class="fa-solid fa-wifi active" title="Online Sync Active"></i>
+                  <i class="fa-solid fa-print" title="Thermal 80mm Ready"></i>
+                </div>
+              </div>
+              <div class="mockup-body mockup-pos">
+                <div class="pos-store-bar">
+                  <div class="pos-store-name">
+                    <i class="fa-solid fa-store text-cyan"></i> Namaste Supermarket (WH-STORE)
+                  </div>
+                  <div class="pos-shift-badge">
+                    <span class="badge-dot-green"></span> SHIFT #04 • ACTIVE
+                  </div>
+                </div>
+
+                <div class="pos-cart-table">
+                  <div class="pos-cart-header">
+                    <span>ITEM</span>
+                    <span>QTY</span>
+                    <span>UNIT (RS)</span>
+                    <span style="text-align: right;">TOTAL (RS)</span>
+                  </div>
+                  <div class="pos-cart-row">
+                    <span>Shakti Wheat Flour 5kg</span>
+                    <span>2</span>
+                    <span>450.00</span>
+                    <span style="text-align: right; color: #38bdf8;">900.00</span>
+                  </div>
+                  <div class="pos-cart-row">
+                    <span>Himalayan Basmati 25kg</span>
+                    <span>1</span>
+                    <span>2,850.00</span>
+                    <span style="text-align: right; color: #38bdf8;">2,850.00</span>
+                  </div>
+                  <div class="pos-cart-row">
+                    <span>Wai Wai Quick 75g (Case)</span>
+                    <span>1</span>
+                    <span>720.00</span>
+                    <span style="text-align: right; color: #38bdf8;">720.00</span>
+                  </div>
+                </div>
+
+                <div class="pos-totals-box">
+                  <div class="pos-total-row">
+                    <span>Subtotal</span>
+                    <span>Rs. 4,470.00</span>
+                  </div>
+                  <div class="pos-total-row">
+                    <span>Nepal VAT (13% IRD)</span>
+                    <span class="text-yellow">Rs. 581.10</span>
+                  </div>
+                  <div class="pos-total-row highlight">
+                    <span>Net Amount Payable</span>
+                    <span class="text-green">Rs. 5,051.10</span>
+                  </div>
+                </div>
+
+                <div class="pos-tender-grid">
+                  <div class="pos-tender-btn"><i class="fa-solid fa-money-bill"></i> Cash</div>
+                  <div class="pos-tender-btn active"><i class="fa-solid fa-qrcode"></i> eSewa</div>
+                  <div class="pos-tender-btn"><i class="fa-solid fa-mobile-screen"></i> Khalti</div>
+                  <div class="pos-tender-btn"><i class="fa-solid fa-book"></i> Khata</div>
+                </div>
+
+                <div class="pos-footer-status">
+                  <span><i class="fa-solid fa-database text-green"></i> Dexie.js (0 offline queued)</span>
+                  <span>IRD Sequence: <strong class="text-blue">#INV-2081-0042</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
         <!-- More Projects Grid -->
         <div class="other-projects">
           <h3 class="subsection-title">More Noteworthy Projects</h3>
@@ -647,6 +799,7 @@
           <!-- Quick click command suggestions -->
           <div class="terminal-quick-actions">
             <span class="quick-title">Quick commands:</span>
+            <button class="quick-cmd" data-cmd="nextgen status">nextgen status</button>
             <button class="quick-cmd" data-cmd="lxrun list">lxrun list</button>
             <button class="quick-cmd" data-cmd="dbstack status">dbstack status</button>
             <button class="quick-cmd" data-cmd="glide --version">glide --version</button>
@@ -710,21 +863,21 @@
             </ul>
           </div>
 
-          <!-- Backend & Database Systems -->
+          <!-- Backend, Cloud & SaaS Systems -->
           <div class="skill-category-card">
             <div class="skill-card-header">
-              <i class="fa-solid fa-database skill-icon text-purple"></i>
-              <h3>Backend & Database Systems</h3>
+              <i class="fa-solid fa-cloud-arrow-up skill-icon text-purple"></i>
+              <h3>Cloud SaaS &amp; Backend Systems</h3>
             </div>
             <ul class="skill-list">
-              <li><i class="fa-solid fa-check"></i> MariaDB & MySQL Database Engines</li>
-              <li><i class="fa-solid fa-check"></i> PostgreSQL Server Administration</li>
-              <li><i class="fa-solid fa-check"></i> Python 3 & Django Framework</li>
-              <li><i class="fa-solid fa-check"></i> PHP & Laravel Ecosystem</li>
-              <li><i class="fa-solid fa-check"></i> RESTful API Architecture</li>
-              <li><i class="fa-solid fa-check"></i> Authentication & OAuth Workflows</li>
-              <li><i class="fa-solid fa-check"></i> Git, GitHub Actions & CI/CD Pipelines</li>
-              <li><i class="fa-solid fa-check"></i> CMake & Ninja Build Systems</li>
+              <li><i class="fa-solid fa-check"></i> Python 3 &amp; Django 6 + DRF Monoliths</li>
+              <li><i class="fa-solid fa-check"></i> FastAPI Microservices &amp; Uvicorn</li>
+              <li><i class="fa-solid fa-check"></i> PostgreSQL 16 (Row-Locking Concurrency)</li>
+              <li><i class="fa-solid fa-check"></i> Redis 7 &amp; Celery Asynchronous Workers</li>
+              <li><i class="fa-solid fa-check"></i> Offline-First React 19 + Dexie.js (IndexedDB)</li>
+              <li><i class="fa-solid fa-check"></i> MariaDB &amp; MySQL Database Engines</li>
+              <li><i class="fa-solid fa-check"></i> RESTful API Architecture &amp; OpenAPI / Swagger</li>
+              <li><i class="fa-solid fa-check"></i> Docker, Docker Compose &amp; Nginx Gateways</li>
             </ul>
           </div>
         </div>

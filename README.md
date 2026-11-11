@@ -11,16 +11,21 @@ Personal engineering portfolio website showcasing low-level Linux systems, nativ
 
 ## 🚀 Featured Projects Showcased
 
-1. **[Glide Files](https://github.com/koiralaabishek/Glide-Files-)**:
+1. **[NextGen AI POS & ERP](https://github.com/koiralaabishek/NextGen-AI-POS-ERP)**:
+   - Cloud-native, multi-tenant SaaS POS & ERP platform with Holt-Winters AI demand forecasting and Nepal IRD fiscal compliance.
+   - Built with **Django 6 + DRF**, **React 19 + TypeScript**, **FastAPI**, **PostgreSQL 16**, **Redis + Celery**, and **Dexie.js**.
+   - Features offline-capable IndexedDB checkout, gapless IRD invoice sequences, 13% double-entry VAT ledgers, restaurant KDS & table routing, wholesale volume price tiers, and customer Khata debt settlement.
+
+2. **[Glide Files](https://github.com/koiralaabishek/Glide-Files-)**:
    - The elegance of macOS Finder, engineered for modern Linux desktops.
    - Built with **Flutter**, **Dart**, and **GTK 3**.
    - Features **GlideDrop P2P Engine** (AirDrop protocol for Android, iOS, Windows, Linux) + QR WebDrop Gateway, 20MB chunked buffer pipeline, and universal archive handling (50+ formats).
 
-2. **[DBStack Control Panel](https://github.com/koiralaabishek/DBStack)**:
+3. **[DBStack Control Panel](https://github.com/koiralaabishek/DBStack)**:
    - Modern native **GTK 3** Control Panel for Linux to install, configure, and manage **MariaDB** and **PostgreSQL** database servers.
    - Features 1-click engine installation with `pkexec` privilege escalation, PID monitoring, built-in SQL runner, and live `journalctl` log streaming.
 
-3. **[LxSub — Linux Subsystem for Linux](https://github.com/koiralaabishek/Linux-SubSytem-Linux)**:
+4. **[LxSub — Linux Subsystem for Linux](https://github.com/koiralaabishek/Linux-SubSytem-Linux)**:
    - WSL for Linux desktops and servers.
    - Built with modern **C++20**, **Linux Namespaces** (`CLONE_NEWPID`, `CLONE_NEWNS`, `CLONE_NEWNET`, etc.), **Cgroups v2**, and **Copy-on-Write (COW) OverlayFS** storage.
    - Includes intuitive `lxrun` CLI utility for instant snapshotting, cloning, and multi-distro sandboxing.

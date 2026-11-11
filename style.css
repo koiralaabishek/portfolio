@@ -949,6 +949,135 @@ section {
   margin-top: 0.5rem;
 }
 
+/* NextGen POS Mockup Visual */
+.mockup-pos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  background: #090d16;
+}
+
+.pos-store-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1b4b;
+  border: 1px solid #3730a3;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.72rem;
+}
+
+.pos-store-name {
+  color: #c7d2fe;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.pos-shift-badge {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+.pos-cart-table {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+}
+
+.pos-cart-header {
+  display: grid;
+  grid-template-columns: 2fr 0.6fr 1.1fr 1.1fr;
+  color: #64748b;
+  font-weight: 700;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid #1e293b;
+  margin-bottom: 0.35rem;
+}
+
+.pos-cart-row {
+  display: grid;
+  grid-template-columns: 2fr 0.6fr 1.1fr 1.1fr;
+  color: #cbd5e1;
+  padding: 0.25rem 0;
+  border-bottom: 1px dashed rgba(51, 65, 85, 0.5);
+}
+
+.pos-cart-row:last-child {
+  border-bottom: none;
+}
+
+.pos-totals-box {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+}
+
+.pos-total-row {
+  display: flex;
+  justify-content: space-between;
+  color: #94a3b8;
+  margin-bottom: 0.2rem;
+}
+
+.pos-total-row.highlight {
+  color: #f8fafc;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border-top: 1px solid #374151;
+  padding-top: 0.3rem;
+  margin-top: 0.3rem;
+}
+
+.pos-tender-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.4rem;
+}
+
+.pos-tender-btn {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 4px;
+  padding: 0.35rem 0.25rem;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.pos-tender-btn.active {
+  background: rgba(99, 102, 241, 0.2);
+  border-color: #6366f1;
+  color: #a5b4fc;
+}
+
+.pos-footer-status {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: #64748b;
+  padding-top: 0.2rem;
+}
+
 /* DBStack Visual */
 .mockup-dbstack {
   display: flex;

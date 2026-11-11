@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const commands = {
     help: () => `
 <span class="text-green">Available Commands:</span>
+  <span class="term-highlight">nextgen status</span>     - Check NextGen AI POS & ERP SaaS cluster telemetry
   <span class="term-highlight">lxrun list</span>         - List installed Linux subsystems (LxSub)
   <span class="term-highlight">lxrun run &lt;distro&gt;</span>  - Launch isolated Linux namespace environment
   <span class="term-highlight">dbstack status</span>     - Check MariaDB & PostgreSQL service status
@@ -66,6 +67,36 @@ document.addEventListener('DOMContentLoaded', () => {
   <span class="term-highlight">contact</span>            - Show email & GitHub links
   <span class="term-highlight">neofetch</span>           - Display systems info & ASCII logo
   <span class="term-highlight">clear</span>              - Clear the terminal console
+`,
+
+    'nextgen status': () => `
+<span class="text-cyan">NextGen AI POS & ERP — Cloud SaaS Telemetry</span>
+========================================================================
+[LAYER]              [TECHNOLOGY]         [STATUS]     [DETAILS]
+Core REST API        Django 6.1.3 + DRF   <span class="text-green">● ACTIVE</span>     14 Domain Apps (Port 8000)
+AI Intelligence      FastAPI + Uvicorn    <span class="text-green">● READY</span>      Holt-Winters Forecasting (Port 8001)
+Primary Database     PostgreSQL 16        <span class="text-green">● HEALTHY</span>    Row-locking transactions (Port 5432)
+Task Broker          Redis 7 + Celery     <span class="text-green">● IDLE</span>       Queue depth: 0 | Auto-reconciliation
+Offline POS PWA      React 19 + Dexie.js  <span class="text-green">● SYNCED</span>     IndexedDB local cache & ESC/POS
+Nepal Fiscal Engine  IRD Gapless Seq      <span class="text-green">● COMPLIANT</span>  Annex 5/7 Books & 13% VAT Ledger
+========================================================================
+Default Tenant: <span class="text-green">Namaste Supermarket Pvt. Ltd.</span> (PAN: 601234567)
+Repo: <a href="https://github.com/koiralaabishek/NextGen-AI-POS-ERP" target="_blank" class="text-cyan">github.com/koiralaabishek/NextGen-AI-POS-ERP</a>
+`,
+
+    'pos status': () => `
+<span class="text-cyan">NextGen AI POS & ERP — Cloud SaaS Telemetry</span>
+========================================================================
+[LAYER]              [TECHNOLOGY]         [STATUS]     [DETAILS]
+Core REST API        Django 6.1.3 + DRF   <span class="text-green">● ACTIVE</span>     14 Domain Apps (Port 8000)
+AI Intelligence      FastAPI + Uvicorn    <span class="text-green">● READY</span>      Holt-Winters Forecasting (Port 8001)
+Primary Database     PostgreSQL 16        <span class="text-green">● HEALTHY</span>    Row-locking transactions (Port 5432)
+Task Broker          Redis 7 + Celery     <span class="text-green">● IDLE</span>       Queue depth: 0 | Auto-reconciliation
+Offline POS PWA      React 19 + Dexie.js  <span class="text-green">● SYNCED</span>     IndexedDB local cache & ESC/POS
+Nepal Fiscal Engine  IRD Gapless Seq      <span class="text-green">● COMPLIANT</span>  Annex 5/7 Books & 13% VAT Ledger
+========================================================================
+Default Tenant: <span class="text-green">Namaste Supermarket Pvt. Ltd.</span> (PAN: 601234567)
+Repo: <a href="https://github.com/koiralaabishek/NextGen-AI-POS-ERP" target="_blank" class="text-cyan">github.com/koiralaabishek/NextGen-AI-POS-ERP</a>
 `,
 
     'lxrun list': () => `
@@ -103,25 +134,26 @@ All database sockets active. Root privilege broker: pkexec (Ready).
 
     projects: () => `
 <span class="text-green">Featured Engineering Projects:</span>
-1. <a href="#glide-files" class="text-cyan font-bold">Glide Files</a> - macOS Finder elegance for modern Linux desktops (Flutter/GTK).
-2. <a href="#dbstack" class="text-cyan font-bold">DBStack Control Panel</a> - GTK3 MariaDB & PostgreSQL manager for Linux (Python/GTK).
-3. <a href="#lxsub" class="text-cyan font-bold">LxSub (WSL for Linux)</a> - Isolated subsystem using C++20, namespaces & OverlayFS.
-4. <a href="https://github.com/koiralaabishek/Aura-Music-Player-for-linux" target="_blank" class="text-cyan">Aura Music Player</a> - Modern UI Linux audio player.
-5. <a href="https://github.com/koiralaabishek/whatsapp-linux-unofficial" target="_blank" class="text-cyan">WhatsApp Linux</a> - Native Linux desktop client.
+1. <a href="#nextgen-pos" class="text-cyan font-bold">NextGen AI POS &amp; ERP</a> - Multi-tenant cloud SaaS with AI forecasting &amp; Nepal IRD VAT (Django 6 / React 19).
+2. <a href="#glide-files" class="text-cyan font-bold">Glide Files</a> - macOS Finder elegance for modern Linux desktops (Flutter/GTK).
+3. <a href="#dbstack" class="text-cyan font-bold">DBStack Control Panel</a> - GTK3 MariaDB &amp; PostgreSQL manager for Linux (Python/GTK).
+4. <a href="#lxsub" class="text-cyan font-bold">LxSub (WSL for Linux)</a> - Isolated subsystem using C++20, namespaces &amp; OverlayFS.
+5. <a href="https://github.com/koiralaabishek/Aura-Music-Player-for-linux" target="_blank" class="text-cyan">Aura Music Player</a> - Modern UI Linux audio player.
+6. <a href="https://github.com/koiralaabishek/whatsapp-linux-unofficial" target="_blank" class="text-cyan">WhatsApp Linux</a> - Native Linux desktop client.
 `,
 
     skills: () => `
 <span class="text-green">Technical Stack:</span>
 - <span class="text-cyan">Systems:</span> C++20, Linux Namespaces, Cgroups v2, OverlayFS, Systemd, D-Bus, Polkit, POSIX
 - <span class="text-cyan">Desktop:</span> Flutter Desktop, Dart, GTK 3, PyGObject, Debian (.deb), Flatpak
-- <span class="text-cyan">Backend:</span> Python (Django), PHP (Laravel), MariaDB, PostgreSQL, REST APIs
-- <span class="text-cyan">Tooling:</span> Git, GitHub Actions, CMake, Ninja, GDB, Valgrind, Bash
+- <span class="text-cyan">Cloud &amp; SaaS:</span> Python (Django 6 + DRF), FastAPI, React 19, TypeScript, PostgreSQL, Redis, Celery, Dexie.js
+- <span class="text-cyan">Tooling:</span> Git, GitHub Actions, Docker, CMake, Ninja, GDB, Valgrind, Bash
 `,
 
     about: () => `
 <span class="text-green">Abishek Koirala</span>
-Systems & Desktop Software Engineer based in Nepal.
-Creator of Glide Files, DBStack, and LxSub (Linux Subsystem for Linux).
+Systems, Desktop &amp; Cloud Software Engineer based in Nepal.
+Creator of NextGen AI POS &amp; ERP, Glide Files, DBStack, and LxSub (Linux Subsystem for Linux).
 Driven by Unix design philosophies, low-overhead containerization, and modern UI elegance.
 GitHub: https://github.com/koiralaabishek
 Email:  koirala.abishek@hotmail.com

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="posBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="posAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="sparkleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Rounded Squircle -->
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#posBg)" stroke="#312e81" stroke-width="2"/>
+
+  <!-- POS Terminal Screen Body -->
+  <rect x="28" y="24" width="72" height="52" rx="8" fill="#1e293b" stroke="url(#posAccent)" stroke-width="2.5"/>
+  <rect x="34" y="30" width="60" height="36" rx="4" fill="#090d16"/>
+
+  <!-- Screen Content Lines (Receipt & Items) -->
+  <line x1="40" y1="38" x2="68" y2="38" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+  <line x1="74" y1="38" x2="88" y2="38" stroke="#34d399" stroke-width="2" stroke-linecap="round"/>
+  <line x1="40" y1="46" x2="62" y2="46" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+  <line x1="74" y1="46" x2="88" y2="46" stroke="#34d399" stroke-width="2" stroke-linecap="round"/>
+  <line x1="40" y1="54" x2="56" y2="54" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+  <line x1="70" y1="54" x2="88" y2="54" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- POS Terminal Stand & Base -->
+  <path d="M56 76 L72 76 L76 92 L52 92 Z" fill="#334155"/>
+  <rect x="40" y="92" width="48" height="10" rx="4" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- AI Sparkle Badge on Upper Right -->
+  <path d="M96 16 C96 24 104 24 104 24 C104 24 96 24 96 32 C96 24 88 24 88 24 C88 24 96 24 96 16 Z" fill="url(#sparkleGrad)"/>
+  <circle cx="106" cy="32" r="2" fill="#fbbf24"/>
+</svg>
